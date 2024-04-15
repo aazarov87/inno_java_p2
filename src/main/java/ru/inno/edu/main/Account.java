@@ -6,7 +6,7 @@ import ru.inno.edu.interfaceAcc.RuleCountCur;
 import ru.inno.edu.interfaceAcc.RuleNameAcc;
 import java.util.*;
 
-public class Account implements Cloneable {
+public class Account {
 
     private String name;
     private Map<Currancy, Integer> countCurrancy;
@@ -60,15 +60,6 @@ public class Account implements Cloneable {
                 "name='" + name + '\'' +
                 ", countCurrancy=" + countCurrancy +
                 '}';
-    }
-
-    @Override
-    protected Object clone() throws CloneNotSupportedException {
-        Account accTemp = (Account) super.clone();
-
-        //accTemp.countCurrancy = new Map<>();
-        accTemp.countCurrancy = this.getCountCurrancy();
-        return accTemp;
     }
 
     public void undo(){
