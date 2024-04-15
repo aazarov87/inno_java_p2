@@ -3,12 +3,13 @@ package ru.inno.edu.main;
 import ru.inno.edu.enumCur.Currancy;
 
 import java.util.HashMap;
+import java.util.Map;
 
 
 // класс для сохранения состояния Account
 public class AccSave {
     private String name;
-    private HashMap<Currancy, Integer> countCurrancy;
+    private Map<Currancy, Integer> countCurrancy;
 
     @Override
     public String toString() {
@@ -18,7 +19,7 @@ public class AccSave {
                 '}';
     }
 
-    public AccSave(String name, HashMap<Currancy, Integer> countCurrancy) {
+    public AccSave(String name, Map<Currancy, Integer> countCurrancy) {
         this.name = name;
         this.countCurrancy = countCurrancy;
     }
@@ -27,7 +28,7 @@ public class AccSave {
         return name;
     }
 
-    public HashMap<Currancy, Integer> getCountCurrancy() {
+    public Map<Currancy, Integer> getCountCurrancy() {
         return new HashMap<>(countCurrancy);
     }
 }

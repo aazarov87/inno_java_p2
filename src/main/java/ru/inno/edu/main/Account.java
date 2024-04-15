@@ -4,13 +4,12 @@ import ru.inno.edu.enumCur.Currancy;
 import ru.inno.edu.interfaceAcc.UndoState;
 import ru.inno.edu.interfaceAcc.RuleCountCur;
 import ru.inno.edu.interfaceAcc.RuleNameAcc;
-
 import java.util.*;
 
 public class Account implements Cloneable {
 
     private String name;
-    private HashMap<Currancy, Integer> countCurrancy;
+    private Map<Currancy, Integer> countCurrancy;
 
     private RuleCountCur ruleCountCur;
     private RuleNameAcc ruleNameAcc;
@@ -21,7 +20,7 @@ public class Account implements Cloneable {
         return name;
     }
 
-    public HashMap<Currancy, Integer> getCountCurrancy() {
+    public Map<Currancy, Integer> getCountCurrancy() {
         return new HashMap<>(countCurrancy);
     }
 
@@ -67,8 +66,8 @@ public class Account implements Cloneable {
     protected Object clone() throws CloneNotSupportedException {
         Account accTemp = (Account) super.clone();
 
-        accTemp.countCurrancy = new HashMap<>();
-        accTemp.countCurrancy = (HashMap<Currancy, Integer>) countCurrancy.clone();
+        //accTemp.countCurrancy = new Map<>();
+        accTemp.countCurrancy = this.getCountCurrancy();
         return accTemp;
     }
 

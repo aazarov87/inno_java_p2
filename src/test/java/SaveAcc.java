@@ -6,8 +6,6 @@ import ru.inno.edu.enumCur.Currancy;
 import ru.inno.edu.main.AccSave;
 import ru.inno.edu.main.Account;
 
-import java.util.HashMap;
-
 public class SaveAcc {
     @Test
     @DisplayName("Проверка, что при сохранении счета, он не равен последующим изменениям")

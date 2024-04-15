@@ -4,8 +4,6 @@ import org.junit.jupiter.api.Test;
 import ru.inno.edu.check.RuleNameAcc;
 import ru.inno.edu.enumCur.Currancy;
 import ru.inno.edu.main.Account;
-
-import java.util.HashMap;
 import java.util.Map;
 import java.util.NoSuchElementException;
 
@@ -17,7 +15,7 @@ public class UndoTest {
         String etalonName = "EtalonName";
 
         Account account = new Account(etalonName, new RuleNameAcc(), count -> count < 0);
-        HashMap<Currancy, Integer> currancyEtalon = account.getCountCurrancy();
+        Map<Currancy, Integer> currancyEtalon = account.getCountCurrancy();
 
         account.setName("Name2");
         account.addCurrancy(Currancy.RUB, 30);
@@ -46,7 +44,7 @@ public class UndoTest {
         String etalonName = "EtalonName";
 
         Account account = new Account(etalonName, new RuleNameAcc(), count -> count < 0);
-        HashMap<Currancy, Integer> currancyEtalon = account.getCountCurrancy();
+        Map<Currancy, Integer> currancyEtalon = account.getCountCurrancy();
 
         account.setName("Name2");
         account.addCurrancy(Currancy.RUB, 30);
@@ -64,7 +62,7 @@ public class UndoTest {
         String etalonName = "EtalonName";
 
         Account account = new Account(etalonName, new RuleNameAcc(), count -> count < 0);
-        HashMap<Currancy, Integer> currancyEtalon = account.getCountCurrancy();
+        Map<Currancy, Integer> currancyEtalon = account.getCountCurrancy();
 
         account.setName("Name2");
         account.addCurrancy(Currancy.RUB, 30);

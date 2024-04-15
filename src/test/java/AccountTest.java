@@ -1,7 +1,6 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.opentest4j.AssertionFailedError;
 import ru.inno.edu.check.RuleNameAcc;
 import ru.inno.edu.enumCur.Currancy;
 import ru.inno.edu.main.Account;
@@ -50,9 +49,6 @@ public class AccountTest {
     @DisplayName("Проверка, что при добавлении отрицательного количества валюты возникает ошибка")
     public void TestCurransyNotInRange(){
         Account account = new Account("name", new RuleNameAcc(), count -> count < 0);
-
-        //HashMap<Currancy, Integer> currancyIntegerHashMap = new HashMap<>();
-
         Assertions.assertThrows(IllegalArgumentException.class, () ->  account.addCurrancy(Currancy.RUB, -1));
     };
 
@@ -61,7 +57,7 @@ public class AccountTest {
     public void TestCurransyInRange(){
         Account account = new Account("name", new RuleNameAcc(), count -> count < 0);
 
-        HashMap<Currancy, Integer> currancyIntegerHashMap = new HashMap<>();
+        Map<Currancy, Integer> currancyIntegerHashMap = new HashMap<>();
         currancyIntegerHashMap.put(Currancy.RUB, 30);
         currancyIntegerHashMap.put(Currancy.EUR, 50);
         currancyIntegerHashMap.put(Currancy.USD, 700);
