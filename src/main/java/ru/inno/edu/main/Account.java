@@ -13,6 +13,7 @@ public class Account implements Cloneable {
     private HashMap<Currancy, Integer> countCurrancy;
 
     private RuleCountCur ruleCountCur;
+    private RuleNameAcc ruleNameAcc;
 
     private ArrayDeque<UndoState> historyState = new ArrayDeque();
 
@@ -25,6 +26,8 @@ public class Account implements Cloneable {
     }
 
     public void setName(String name) {
+        if (ruleNameAcc.checkName(name)) throw new IllegalArgumentException("name is null. Put name");
+
         String prevName = this.name;
         this.historyState.add((acc)->acc.name = prevName); // не понял почему не срабатывает, если подставить вместо prevName - this.name
 
@@ -35,6 +38,7 @@ public class Account implements Cloneable {
         if (ruleNameAcc.checkName(name)) throw new IllegalArgumentException("name is null. Put name");
         this.name = name;
         this.ruleCountCur = ruleCountCur;
+        this.ruleNameAcc = ruleNameAcc;
 
         countCurrancy = new HashMap<>();
     }
