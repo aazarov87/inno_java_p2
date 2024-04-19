@@ -1,9 +1,10 @@
-package ru.inno.edu.main;
+package ru.inno.edu.task_1.main;
 
-import ru.inno.edu.enumCur.Currancy;
-import ru.inno.edu.interfaceAcc.UndoState;
-import ru.inno.edu.interfaceAcc.RuleCountCur;
-import ru.inno.edu.interfaceAcc.RuleNameAcc;
+import ru.inno.edu.task_1.enumCur.Currancy;
+import ru.inno.edu.task_1.interfaceAcc.UndoState;
+import ru.inno.edu.task_1.interfaceAcc.RuleCountCur;
+import ru.inno.edu.task_1.interfaceAcc.RuleNameAcc;
+
 import java.util.*;
 
 public class Account {

@@ -1,4 +1,4 @@
-package ru.inno.edu.enumCur;
+package ru.inno.edu.task_1.enumCur;
 
 public enum Currancy {
     USD("Доллар США"),

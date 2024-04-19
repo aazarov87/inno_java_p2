@@ -1,9 +1,11 @@
+package task1;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import ru.inno.edu.check.RuleNameAcc;
-import ru.inno.edu.enumCur.Currancy;
-import ru.inno.edu.main.Account;
+import ru.inno.edu.task_1.check.RuleNameAcc;
+import ru.inno.edu.task_1.enumCur.Currancy;
+import ru.inno.edu.task_1.main.Account;
 import java.util.Map;
 import java.util.NoSuchElementException;
 

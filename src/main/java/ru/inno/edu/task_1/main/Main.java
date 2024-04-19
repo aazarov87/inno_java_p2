@@ -1,7 +1,7 @@
-package ru.inno.edu.main;
+package ru.inno.edu.task_1.main;
 
-import ru.inno.edu.check.RuleNameAcc;
-import ru.inno.edu.enumCur.Currancy;
+import ru.inno.edu.task_1.check.RuleNameAcc;
+import ru.inno.edu.task_1.enumCur.Currancy;
 
 public class Main {
     public static void main(String[] args) {

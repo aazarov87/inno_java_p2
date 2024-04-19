@@ -1,4 +1,4 @@
-package ru.inno.edu.interfaceAcc;
+package ru.inno.edu.task_1.interfaceAcc;
 
 // интерфейс для проверки количества валюты
 public interface RuleCountCur {

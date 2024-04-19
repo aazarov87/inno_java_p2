@@ -1,6 +1,6 @@
-package ru.inno.edu.main;
+package ru.inno.edu.task_1.main;
 
-import ru.inno.edu.enumCur.Currancy;
+import ru.inno.edu.task_1.enumCur.Currancy;
 
 import java.util.HashMap;
 import java.util.Map;
