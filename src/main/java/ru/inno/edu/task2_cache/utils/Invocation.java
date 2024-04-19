@@ -10,7 +10,7 @@ import java.util.Map;
 
 public class Invocation implements InvocationHandler {
 
-    private static Object obj;
+    private Object obj;
 
     private Map<Method, Object> cacheValues = new HashMap();
 
