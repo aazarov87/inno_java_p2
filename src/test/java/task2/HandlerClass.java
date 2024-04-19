@@ -1,7 +1,7 @@
 package task2;
 
-import ru.inno.edu.task2_cash.annotation.Cache;
-import ru.inno.edu.task2_cash.annotation.Mutator;
+import ru.inno.edu.task2_cache.annotation.Cache;
+import ru.inno.edu.task2_cache.annotation.Mutator;
 
 public class HandlerClass  implements Handlerable{
         private int counter = 0;

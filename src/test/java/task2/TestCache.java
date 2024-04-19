@@ -3,9 +3,9 @@ package task2;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import ru.inno.edu.task2_cash.farction.Fraction;
-import ru.inno.edu.task2_cash.farction.Fractionable;
-import ru.inno.edu.task2_cash.utils.Utils;
+import ru.inno.edu.task2_cache.farction.Fraction;
+import ru.inno.edu.task2_cache.farction.Fractionable;
+import ru.inno.edu.task2_cache.utils.Utils;
 
 import java.lang.reflect.Field;
 

@@ -1,4 +1,4 @@
-package ru.inno.edu.task2_cash.annotation;
+package ru.inno.edu.task2_cache.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,5 +7,5 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Mutator {
+public @interface Cache {
 }

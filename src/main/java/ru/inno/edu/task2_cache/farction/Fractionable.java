@@ -1,4 +1,4 @@
-package ru.inno.edu.task2_cash.farction;
+package ru.inno.edu.task2_cache.farction;
 
 public interface Fractionable {
 

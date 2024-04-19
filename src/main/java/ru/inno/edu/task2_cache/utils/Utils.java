@@ -1,4 +1,4 @@
-package ru.inno.edu.task2_cash.utils;
+package ru.inno.edu.task2_cache.utils;
 
 import java.lang.reflect.Proxy;
 

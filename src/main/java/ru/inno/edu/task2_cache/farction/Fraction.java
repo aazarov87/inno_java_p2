@@ -1,7 +1,7 @@
-package ru.inno.edu.task2_cash.farction;
+package ru.inno.edu.task2_cache.farction;
 
-import ru.inno.edu.task2_cash.annotation.Cache;
-import ru.inno.edu.task2_cash.annotation.Mutator;
+import ru.inno.edu.task2_cache.annotation.Cache;
+import ru.inno.edu.task2_cache.annotation.Mutator;
 
 public class Fraction implements Fractionable{
 

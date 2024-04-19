@@ -1,8 +1,8 @@
-package ru.inno.edu.task2_cash;
+package ru.inno.edu.task2_cache;
 
-import ru.inno.edu.task2_cash.farction.Fraction;
-import ru.inno.edu.task2_cash.farction.Fractionable;
-import ru.inno.edu.task2_cash.utils.Utils;
+import ru.inno.edu.task2_cache.farction.Fraction;
+import ru.inno.edu.task2_cache.farction.Fractionable;
+import ru.inno.edu.task2_cache.utils.Utils;
 
 public class Starter {
 

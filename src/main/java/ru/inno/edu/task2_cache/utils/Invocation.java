@@ -1,7 +1,7 @@
-package ru.inno.edu.task2_cash.utils;
+package ru.inno.edu.task2_cache.utils;
 
-import ru.inno.edu.task2_cash.annotation.Cache;
-import ru.inno.edu.task2_cash.annotation.Mutator;
+import ru.inno.edu.task2_cache.annotation.Cache;
+import ru.inno.edu.task2_cache.annotation.Mutator;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
