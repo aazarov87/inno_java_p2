@@ -25,15 +25,16 @@ public class DataReaderFileImpl implements DataReader {
 
         try {
             //String dataSource = "dataTask4";
-            String filePackageName = '/' + dataSource.folderName.replace('.', '/');
+           // String filePackageName = /*'/' +*/ dataSource.folderName.replace('.', '/');
             //System.out.println("filePackageName = " + filePackageName);
-            File f = new File("src\\main\\resources\\" + filePackageName);
-            //System.out.println("f = " + f);
+            // File f = new File("src/main/resources/" + filePackageName);
+            File f = new File(dataSource.folderName);
+            System.out.println("f = " + f);
 
-            //System.out.println("1 " + f.length() +  " " +f.listFiles());
+            System.out.println("1 " + f.length() +  " " +f.listFiles());
             for (File file : f.listFiles()) {
                 Scanner scanner = new Scanner(file);
-                //System.out.println(scanner);
+                System.out.println(scanner);
                 while (scanner.hasNextLine()) {
                     DataModel dataModel = new DataModel();
                     String line = scanner.nextLine();

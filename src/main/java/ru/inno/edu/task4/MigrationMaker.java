@@ -12,8 +12,8 @@ public class MigrationMaker {
 
     @Autowired
     DataReader datareader;
-   // @Autowired
-    Consumer<DataModel> printer;
+    @Autowired
+    DataWriter writer;
     @Autowired
     List<DataModifyer> modifyerList = new ArrayList<>();
 
@@ -39,7 +39,9 @@ public class MigrationMaker {
 
             //System.out.println("line = " + line);
       //  }
-
         System.out.println("linesToWrite = " + linesFromFile);
+
+        writer.write(linesFromFile);
+
     }
 }

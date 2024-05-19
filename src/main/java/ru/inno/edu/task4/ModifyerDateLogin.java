@@ -54,8 +54,9 @@ public class ModifyerDateLogin implements DataModifyer {
 
         if (emptyDate.size() > 0) {
             try {
-                String filePackageName = '/' + pathLog.replace('.', '/');
-                FileWriter writer = new FileWriter("src\\main\\resources\\" + filePackageName, true);
+               // String filePackageName = '/' + pathLog.replace('.', '/');
+                //FileWriter writer = new FileWriter("src/main/resources/" + filePackageName, true);
+                FileWriter writer = new FileWriter(pathLog, true);
 
 
                 for (String emptyLine: emptyDate
