@@ -1,6 +1,6 @@
-package ru.inno.edu.task4;
+package ru.inno.edu.task4.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import ru.inno.edu.task4.DTO.DataModel;
 
 import java.util.List;
 

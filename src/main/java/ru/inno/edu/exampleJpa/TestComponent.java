@@ -5,6 +5,10 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class TestComponent {
+    /*public TestComponent(TestRepo testRepo) {
+        this.testRepo = testRepo;
+    }*/
+
     @Autowired
     TestRepo testRepo;
 

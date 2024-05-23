@@ -5,8 +5,10 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class Start {
     public static void main(String[] args) {
-        new AnnotationConfigApplicationContext("ru.inno")
-                .getBean("operationMaker", OperationMaker.class)
-                .make();
+//        new AnnotationConfigApplicationContext("ru.inno")
+//                .getBean("operationMaker", OperationMaker.class)
+//                .make();
+
+        System.out.println("null");
     }
 }

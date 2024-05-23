@@ -1,4 +1,4 @@
-package ru.inno.edu.task4;
+package ru.inno.edu.task4.service.impl;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
@@ -6,13 +6,8 @@ import org.springframework.stereotype.Component;
 
 @Component
 @PropertySource("application.properties")
-public class DataSource {
+public class DataSourceForReader {
 
     @Value("${pathSource}")
-    String folderName;
-
-    /*public DataSource(@Value("pathSource")String a) {
-        System.out.println("DataSource = " + a);
-        folderName = a;
-    }*/
+    public String folderName;
 }
